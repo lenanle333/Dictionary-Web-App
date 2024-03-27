@@ -104,20 +104,43 @@ const DefinitionPage: React.FC<DefinitionProps> = ({ dictionaryEntries }) => {
           ))}
           <div className="mt-10 h-[1px] w-full bg-dark-700 dark:bg-dark-300" />
           {/* Source Section */}
-          <div className="mt-6 md:flex md:items-center">
-            <p className="text-sm text-dark-500 underline dark:text-dark-600 md:text-base">
-              Source
-            </p>
-            <div className="md:ml-5">
-              <a
-                className="mt-2 flex items-center text-sm text-dark-200 underline dark:text-white md:mt-0 md:text-base"
-                href={entry.sourceUrls}
-              >
-                {entry.sourceUrls}
-                <LinkIcon className="ml-3 w-4" />
-              </a>
+          {entry.sourceUrls.length > 1 ? (
+            <div className="mt-6 ">
+              <p className=" text-sm text-dark-500 underline dark:text-dark-600 md:text-base">
+                Source
+              </p>
+              <div>
+                {entry.sourceUrls.map((source: string, index: number) => (
+                  <a
+                    className="mt-2 flex items-center text-sm text-dark-200 underline dark:text-white  md:text-base"
+                    href={source}
+                    key={index}
+                  >
+                    {source}
+                    <LinkIcon className="ml-3 w-4" />
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="mt-6 md:flex md:items-center">
+              <p className=" text-sm text-dark-500 underline dark:text-dark-600 md:text-base">
+                Source
+              </p>
+              <div className="md:ml-5">
+                {entry.sourceUrls.map((source: string, index: number) => (
+                  <a
+                    className="mt-2 flex items-center  text-sm text-dark-200 underline dark:text-white md:mt-0 md:text-base"
+                    href={source}
+                    key={index}
+                  >
+                    {source}
+                    <LinkIcon className="ml-3 w-4" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       ))}
     </div>

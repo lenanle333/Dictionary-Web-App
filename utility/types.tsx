@@ -3,7 +3,7 @@ export interface APIEntry {
   phonetic: string;
   phonetics: Phonetic[];
   meanings: Meaning[];
-  sourceUrls: string;
+  sourceUrls: string[];
 }
 export interface Phonetic {
   text: string;

@@ -18,7 +18,7 @@ export default function Home() {
   const toggleActiveError = (err: boolean) => {
     setIsActiveError(err);
   };
-  console.log(dictionaryEntries);
+
   return (
     <div className="px-6 md:px-10 lg:px-80">
       {/* Header Section */}
