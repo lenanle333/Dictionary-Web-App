@@ -45,7 +45,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       <div className="relative flex items-center">
         <input
           type="search"
-          className={`${isEmptyInput ? "ring ring-err ring-opacity-50" : ""} w-full rounded-2xl bg-dark-700 py-3.5 pl-6 pr-12 font-bold text-dark-100 placeholder-dark-100 placeholder-opacity-25 focus:outline-none focus:ring focus:ring-primary-100  focus:ring-opacity-50 dark:bg-dark-200 dark:text-white dark:placeholder-white dark:placeholder-opacity-25 dark:focus:ring-primary-500 md:h-16 md:text-xl`}
+          className={`${isEmptyInput ? "ring ring-err ring-opacity-50" : ""} w-full rounded-2xl bg-dark-700 py-3.5 pl-6 pr-12 font-medium text-dark-100 placeholder-dark-100 placeholder-opacity-25 focus:outline-none focus:ring focus:ring-primary-100  focus:ring-opacity-50 dark:bg-dark-200 dark:text-white dark:placeholder-white dark:placeholder-opacity-25 dark:focus:ring-primary-500 md:h-16 md:text-xl`}
           placeholder="Search for any word..."
           aria-label="Search"
           value={word}

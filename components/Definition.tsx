@@ -25,11 +25,11 @@ const DefinitionPage: React.FC<DefinitionProps> = ({ dictionaryEntries }) => {
   }
 
   return (
-    <div className=" mb-20 md:mb-28">
+    <div className="mb-20 md:mb-28">
       {/* Header Word Section */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className=" mb-2 text-[32px] font-bold text-dark-100 dark:text-white md:mb-3 md:text-[64px] md:leading-tight">
+          <h1 className="mb-2 text-[32px] font-bold text-dark-100 dark:text-white md:mb-3 md:text-[64px] md:leading-tight">
             {dictionaryEntries[0]?.word}
           </h1>
           <p className="text-lg text-primary-100 dark:text-primary-500 md:text-2xl">

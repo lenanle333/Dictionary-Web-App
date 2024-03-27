@@ -27,11 +27,11 @@ export default function DropDown() {
   return (
     <Menu as="div" className="relative w-fit items-center text-left">
       <div>
-        <Menu.Button className=" text-dark-100 inline-flex items-center justify-center rounded-md text-sm font-bold hover:underline-offset-1 focus:outline-none md:text-lg dark:text-white">
+        <Menu.Button className=" inline-flex items-center justify-center rounded-md text-sm font-semibold text-dark-100 hover:underline-offset-1 focus:outline-none dark:text-white md:text-lg">
           {renderedFontName}
 
           <ChevronDownIcon
-            className="text-primary-100 dark:text-primary-500 -mr-1 ml-2 h-5 w-5 "
+            className="-mr-1 ml-2 h-5 w-5 text-primary-100 dark:text-primary-500 "
             aria-hidden="true"
           />
         </Menu.Button>
@@ -45,7 +45,7 @@ export default function DropDown() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="divide-dark-700 dark:divide-dark-400 dark:bg-dark-300 dark:shadow-dark-200 absolute right-0 z-[1000] mt-2 w-40 origin-top-right divide-y rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-[1000] mt-2 w-40 origin-top-right divide-y divide-dark-700 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none dark:divide-dark-400 dark:bg-dark-300 dark:shadow-dark-200">
           <div className="">
             <Menu.Item>
               {({ active }) => (
