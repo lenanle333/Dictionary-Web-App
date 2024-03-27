@@ -54,7 +54,7 @@ export default function DropDown() {
                     active
                       ? "text-primary-100 dark:text-primary-500"
                       : "text-dark-200 dark:text-white"
-                  } group flex w-full items-center rounded-md py-3 pl-6 font-inter text-sm font-bold md:text-lg`}
+                  } group flex w-full items-center rounded-md py-3 pl-6 font-inter text-sm font-medium md:text-lg`}
                   onClick={() => handleFontFamilyChange("inter")}
                 >
                   Sans Serif
@@ -70,7 +70,7 @@ export default function DropDown() {
                     active
                       ? "text-primary-100 dark:text-primary-500"
                       : "text-dark-200 dark:text-white"
-                  } group flex w-full items-center rounded-md py-3 pl-6 font-lora text-sm font-bold md:text-lg`}
+                  } group flex w-full items-center rounded-md py-3 pl-6 font-lora text-sm font-medium md:text-lg`}
                   onClick={() => handleFontFamilyChange("lora")}
                 >
                   Serif
@@ -86,7 +86,7 @@ export default function DropDown() {
                     active
                       ? "text-primary-100 dark:text-primary-500"
                       : "text-dark-200 dark:text-white"
-                  } group flex w-full items-center rounded-md py-3 pl-6 font-inconsolata text-sm font-bold md:text-lg`}
+                  } group flex w-full items-center rounded-md py-3 pl-6 font-inconsolata text-sm font-medium md:text-lg`}
                   onClick={() => handleFontFamilyChange("inconsolata")}
                 >
                   Mono
