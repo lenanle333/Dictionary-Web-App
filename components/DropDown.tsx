@@ -27,7 +27,7 @@ export default function DropDown() {
   return (
     <Menu as="div" className="relative w-fit items-center text-left">
       <div>
-        <Menu.Button className=" inline-flex items-center justify-center rounded-md text-sm font-semibold text-dark-100 hover:underline-offset-1 focus:outline-none dark:text-white md:text-lg">
+        <Menu.Button className=" inline-flex items-center justify-center rounded-md text-sm font-medium text-dark-100 hover:underline-offset-1 focus:outline-none dark:text-white md:text-lg">
           {renderedFontName}
 
           <ChevronDownIcon
